@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import RateLimitedUI from "../components/RateLimitedUI";
 import NoteCard from "../components/NoteCard";
 import api from "../lib/axios";
+import NotesNotFound from "../components/NotesNotFound";
 
 const HomePage = () => {
     const [isRateLimited, setIsRateLimited] = useState(true);
@@ -46,10 +47,16 @@ const HomePage = () => {
                     </div>
                 )}
 
+                {notes.length === 0 && !isRateLimited && <NotesNotFound />}
+
                 {notes.length > 0 && !isRateLimited && (
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {notes.map((note) => (
-                            <NoteCard key={note._id} note={note} />
+                            <NoteCard
+                                key={note._id}
+                                note={note}
+                                setNotes={setNotes}
+                            />
                         ))}
                     </div>
                 )}
