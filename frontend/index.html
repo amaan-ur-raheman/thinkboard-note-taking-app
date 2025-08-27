@@ -1,13 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+
+        <!-- Favicon and Icons -->
+        <link rel="icon" type="image/x-icon" href="./public/favicon.svg" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon-16x16.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./site.webmanifest" />
+
+        <!-- Primary Meta Tags -->
+        <title>ThinkBoard - Modern Note-Taking Application</title>
+        <meta
+            name="title"
+            content="ThinkBoard - Modern Note-Taking Application"
+        />
+        <meta
+            name="description"
+            content="A beautiful, full-stack note-taking application built with the MERN stack. Create, edit, organize, and manage your thoughts with an intuitive and modern interface."
+        />
+        <meta
+            name="keywords"
+            content="notes, note-taking, productivity, MERN stack, React, Node.js, MongoDB, writing, organize, thoughts, digital notes"
+        />
+        <meta name="author" content="ThinkBoard Team" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+
+        <!-- Viewport and Mobile Optimization -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="ThinkBoard" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thinkboard.app/" />
+        <meta
+            property="og:title"
+            content="ThinkBoard - Modern Note-Taking Application"
+        />
+        <meta
+            property="og:description"
+            content="A beautiful, full-stack note-taking application built with the MERN stack. Create, edit, organize, and manage your thoughts with an intuitive and modern interface."
+        />
+        <meta property="og:image" content="./og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="ThinkBoard" />
+        <meta property="og:locale" content="en_US" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://thinkboard.app/" />
+        <meta
+            name="twitter:title"
+            content="ThinkBoard - Modern Note-Taking Application"
+        />
+        <meta
+            name="twitter:description"
+            content="A beautiful, full-stack note-taking application built with the MERN stack. Create, edit, organize, and manage your thoughts with an intuitive and modern interface."
+        />
+        <meta name="twitter:image" content="./twitter-image.jpg" />
+        <meta
+            name="twitter:image:alt"
+            content="ThinkBoard - Modern Note-Taking Application"
+        />
+        <meta name="twitter:creator" content="@thinkboard" />
+        <meta name="twitter:site" content="@thinkboard" />
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#00FF9D" />
+        <meta name="msapplication-TileColor" content="#00FF9D" />
+        <meta name="msapplication-config" content="./browserconfig.xml" />
+
+        <!-- Preconnect for Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://thinkboard.app/" />
+
+        <!-- Structured Data for Rich Snippets -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "ThinkBoard",
+                "description": "A beautiful, full-stack note-taking application built with the MERN stack. Create, edit, organize, and manage your thoughts with an intuitive and modern interface.",
+                "url": "https://thinkboard.app",
+                "applicationCategory": "Productivity",
+                "operatingSystem": "All",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "author": {
+                    "@type": "Organization",
+                    "name": "ThinkBoard Team"
+                },
+                "screenshot": "https://thinkboard.app/screenshot.jpg",
+                "featureList": [
+                    "Create and edit notes",
+                    "Organize thoughts",
+                    "Modern interface",
+                    "Real-time updates",
+                    "Cross-platform support"
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
